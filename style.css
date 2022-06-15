@@ -6,11 +6,11 @@
         color: rgb(17, 27, 28);
         font-family: Georgia, 'Times New Roman', Times, serif;}
         
-a{color: rgb(17,27,28);}
+a{color: rgb(17,27,28);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;}
 
 img{max-width: 100%}
-
-address {font-size: normal;}
 
 header 
     {padding: 1rem .5rem;
@@ -37,6 +37,19 @@ footer{padding: 1rem;
     {display: flex;
     justify-content: space-between;
     position: relative}
+
+@media (min-width:599px) { 
+  .btn {
+  list-style-type: none;
+  margin: 0;
+      }
+.drops {
+  display: inline;
+  width: 2in;
+  float: right;
+  font-size: large;
+  padding-top: .6in;
+  }}
 
 .wrapper {
     display: grid;
