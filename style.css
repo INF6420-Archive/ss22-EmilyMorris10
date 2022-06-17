@@ -6,11 +6,65 @@
         color: rgb(17, 27, 28);
         font-family: Georgia, 'Times New Roman', Times, serif;}
         
-a{color: rgb(17,27,28);
+a{color: rgb(17, 27, 28);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;}
+  font-weight: bolder}
 
-img{max-width: 100%}
+.email {
+  color: rgb(206, 224, 230);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+@media (max-width:600px) {
+
+.five{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+
+}
+
+.six {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  vertical-align: top;
+}
+
+.seven {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  vertical-align: top;
+}}
+
+@media (min-width:599px) {
+
+.five {
+  display: inline-block;
+  width: 100%;
+  height: 33%;
+  vertical-align: top
+}
+.six  
+{display: inline-block;
+  width: 100%;
+  height: 33%;
+  vertical-align: top}
+
+.seven  
+{display: inline-block;
+  width: 100%;
+  height: 33%;
+  vertical-align: top}}
+
+p{
+  border-style: outset; 
+  padding: 10px;
+  border: 2px solid rgb(71, 134, 146)
+}
 
 header 
     {padding: 1rem .5rem;
@@ -25,18 +79,23 @@ header
 
 main
     {padding: 1rem 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center}
+    display: flexbox;
+    max-width: 600px;
+    margin: 0 auto;
+    }
 
-footer{padding: 1rem;
+footer{
     background-color: rgb(34, 64, 70);
-    color: rgb(206, 224, 230);}
+    color: rgb(206, 224, 230);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;}
     
-.main-menu
-    {display: flex;
+nav
+    {display: flexbox;
     justify-content: space-between;
-    position: relative}
+    position:relative}
 
 @media (min-width:599px) { 
   .btn {
@@ -46,7 +105,6 @@ footer{padding: 1rem;
 .drops {
   display: inline;
   width: 2in;
-  float: right;
   font-size: large;
   padding-top: .6in;
   }}
@@ -77,29 +135,6 @@ footer{padding: 1rem;
     grid-row: 1; 
   }
 
-  .wrapper-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-  }
-  .five {
-    grid-column: 1;
-    grid-row: 1/4;
-  }
-  .six {
-    grid-column: 2;
-    grid-row: 2;
-    float: left;
-  }
-  .seven {
-    grid-column: 2;
-    grid-row: 3;
-    padding-bottom: 4in;
-    padding-top: .5;
-    float: right;
-    }
-
   .eight {
     grid-column: 1;
     grid-row: 2;
@@ -121,51 +156,6 @@ footer{padding: 1rem;
     grid-row: 2;
     justify-content: center;
   }
-
-@media only screen and (max-width: 600px) {
-  .wrapper-main 
-  {display: grid;
-  grid-template-columns: repeat(1, 1fr)}
-  .five 
-  {width: 100%;
-  grid-column: 1;
-  grid-row: 3;}
-  .six {
-    grid-column: 1;
-    grid-row: 1;
-    float: left;
-  }
-  .seven {
-    grid-column: 1;
-    grid-row: 2;
-    padding-bottom: .5in;
-    padding-top: .5;
-    float: right;
-    }}
-
-@media (min-width:599px) {
-  .wrapper-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  }
-  .five {
-    grid-column: 1;
-    grid-row: 1/4;
-  }
-  .six {
-    grid-column: 2;
-    grid-row: 2;
-    float: left;
-  }
-  .seven {
-    grid-column: 2;
-    grid-row: 3;
-    padding-bottom: 4in;
-    padding-top: .5;
-    float: right;
-    }}
  
 @media (min-width:599px) {
   .wrapper {
