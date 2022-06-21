@@ -88,15 +88,16 @@ main
 footer{
     background-color: rgb(34, 64, 70);
     color: rgb(206, 224, 230);
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;}
     
 nav
-    {display: flexbox;
-    justify-content: space-between;
-    position:relative}
+    {text-align: center;}
+nav li 
+      {  display: inline-block;
+        font-size: 20px;
+        padding: 20px;}
 
 @media (min-width:599px) { 
   .btn {
