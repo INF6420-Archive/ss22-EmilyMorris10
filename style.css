@@ -249,12 +249,58 @@ nav li
     justify-content: center;
   }
 }
-  
+label {
+  display: block;
+  font-weight: 700;
+}
+@media screen and (min-width: 1065px) {
+  form {
+    width: 50%;
+    margin: 3em auto;
+  }
+}
 
+.form-input
+{border: 2px solid rgb(71, 134, 146);
+ border-radius: 4px;
+ font-size: 16px;
+ font-weight: 400;
+ padding: 1em;
+ margin-bottom: 1.5em;
+ width: 100%}
 
+.form-input:focus {
+  outline: none;
+  border: 2px solid rgb(17, 27, 28);
+}
 
+[type= "submit"] {
+  background: rgb(71, 134, 146);
+  color: rgb(17, 27, 28);
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: .5em;
+  cursor: pointer;
+}
+[type= "submit"]:hover,
+[type= "submit"]:focus
+{border: 2px solid rgb(17, 27, 28);
+ background: rgb(41, 81, 90);}
 
+ textarea {
+  height: 150px;
+  resize: vertical;
 
+ }
+ .error {
+  border-color: #C62828;
+}
 
-
-
+.error-message {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: #C62828;
+}
