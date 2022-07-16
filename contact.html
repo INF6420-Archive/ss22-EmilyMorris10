@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head meta name="viewport" content="width=320, initial-scale=0.5"> 
@@ -19,21 +20,24 @@
             </ul>
 </nav>
 </header>
-<main class="wrapper">
-    <div class="one"><h2>Recipe 1</h2></div> 
-    <div class="three" ><p>Instrcutions</p></div>
-    <div class="two"><h2>Recipe 2</h2></div> 
-    <div class="four"><p> Instrcutions</p></div>
-    <div class="eight"><h2>Recipe 3</h2></div> 
-    <div class="ten" ><p>Instrcutions</p></div>
-    <div class="nine"><h2>Recipe 4</h2></div> 
-    <div class="eleven"><p>Instructions</p></div>
+
+<main>
+    <form action="https://formspree.io/f/meqnbpbw" method="POST" class="validate"
+>
+  <label for="name"> Name </label>
+    <input id="name" type="text" name="name" class="form-input">
+
+  <label for="email"> Email</label>
+   <input id="email" type="email" name="_replyto" class="form-input" required>
+   <label for="message">Message</label>
+   <textarea id= "message" name="message" class="form-input" rows="4" required></textarea>
+   
+
+  <button type="submit">Submit</button>
+</form>
 </main>
+
 <footer meta name="viewport" content="width=320, initial-scale=0.5">
-    <div><h2>Questions or Comments</h2></div><br>
-    <p class= "email">Contact me at 
-        <a class="email" href="mailto: emilyrmorris1999@gmail.com" target="_blank">emilyrmorris1999@gmail.com</a>
-        .</p>
         <div><p class= "email">All rights reserved Recipes and Relics</p></div>
 </footer>
 </body>
